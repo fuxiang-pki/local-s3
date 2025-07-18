@@ -121,6 +121,11 @@ service in the "after each" callback.
 
 For a comprehensive comparison of features between LocalS3 and Amazon S3, including limitations and missing functionalities, please see [FEATURE_COMPARISON.md](FEATURE_COMPARISON.md).
 
+You can also run the compatibility checker script to quickly see what features are supported:
+```bash
+./scripts/check-compatibility.sh
+```
+
 ## Incoming features
 
 + Replication configuration.

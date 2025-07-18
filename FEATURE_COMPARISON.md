@@ -6,6 +6,25 @@ This document provides a comprehensive comparison between Amazon S3 and LocalS3,
 
 LocalS3 is a lightweight Amazon S3 mock service designed for testing and development purposes. While it implements many core S3 operations, it lacks numerous advanced features that the full Amazon S3 service provides.
 
+## Feature Coverage Summary
+
+| Feature Category | Coverage | Key Missing Items |
+|------------------|----------|-------------------|
+| **Basic Object Operations** | 🟢 High (90%+) | Object ACL, Object Tagging |
+| **Multipart Upload** | 🟡 Medium (50%) | Abort, List operations |
+| **Bucket Operations** | 🟢 High (80%+) | ListBuckets, Advanced configs |
+| **Security & Access Control** | 🔴 Low (20%) | IAM, Object Lock, Encryption |
+| **Storage Classes & Lifecycle** | 🔴 None (0%) | All storage classes, Lifecycle policies |
+| **Cross-Region Features** | 🔴 None (0%) | Replication, Transfer Acceleration |
+| **Event Notifications** | 🔴 None (0%) | SNS, SQS, Lambda triggers |
+| **Analytics & Monitoring** | 🔴 None (0%) | CloudWatch, Storage Analytics |
+| **Web & CDN Features** | 🔴 None (0%) | Website hosting, CloudFront |
+| **Enterprise Features** | 🔴 Low (10%) | VPC endpoints, Compliance |
+
+🟢 = Excellent coverage for development/testing  
+🟡 = Partial coverage, some limitations  
+🔴 = Minimal or no coverage
+
 ## Implemented Features in LocalS3
 
 LocalS3 currently supports the following S3 operations:
