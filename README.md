@@ -117,6 +117,10 @@ service in the "after each" callback.
 + PutBucketTagging
 + UploadPart
 
+## Feature Comparison with Amazon S3
+
+For a comprehensive comparison of features between LocalS3 and Amazon S3, including limitations and missing functionalities, please see [FEATURE_COMPARISON.md](FEATURE_COMPARISON.md).
+
 ## Incoming features
 
 + Replication configuration.
